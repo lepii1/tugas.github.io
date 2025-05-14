@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Saya</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <center><header>
+    <div class="wrapper">
+    <header>
         <h1>Belajar HTML </h1>
     </header>
-    </center>
-    <main>
+
+    <main class="content-wrapper">
+    <aside class="sidebar">Menu</aside>
+
+    <section class="content">
         <article>
             <h2> Tentang saya</h2>
             <p>Perkenalkan nama saya Ahmad Aulia Fahlevi, Sekarang saya belajar di Politeknik Negeri Lhokseumawe 
@@ -19,9 +26,10 @@
                 yang pasti hal yang pertama saya ingin lakukan adalah membahagiakan orang tua saya, Terima Kasih.
             </p>
         </article>
-    </main>
 
-    <center><img src="myfoto.jpg" alt="gambar" height="400"></center>
+    <center>
+    
+    <img src="myfoto.jpg" alt="gambar" height="400"></center>
 
     <p>Jika ingin melihat tentang saya lebih lanjut bisa di klik disini <a href="https://lepii1.github.io/CV/">CV</a></p>
 
@@ -52,7 +60,7 @@
          </tbody>
        </table>
       
-       <h3>Tambah Data Atlit</h3>
+       <h2>Tambah Data Atlit</h2>
        <form id="formAtlit">
         <label for="nama">Nama:</label>
         <input type="text" id="nama" name="nama"><br><br>
@@ -65,10 +73,12 @@
       
         <button type="button" onclick="tambahData()">Tambah</button>
        </form>
-      
-       <script src="script.js"></script>
-    <footer>
+    </section>
+    </main>
+
+    <footer class="footer">
         <p>&copy;2025 Website Saya</p>
     </footer>
+</div>
 </body>
 </html>
